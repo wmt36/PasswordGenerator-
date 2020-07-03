@@ -27,9 +27,9 @@ form.addEventListener("submit", e => {
     e.preventDefault()
     const characterAmount = characterAmountNumber.value
     const includeUppercase = includeUppercaseElement.checked
-    const includeLowercase = includeLowercaseElement.clicked
-    const includeSymbols = includeSymbolsElement.clicked
-    const includeNumbers = includeNumbersElement.clicked
+    const includeLowercase = includeLowercaseElement.checked
+    const includeSymbols = includeSymbolsElement.checked
+    const includeNumbers = includeNumbersElement.checked
 
     const password = generatePassword(characterAmount, includeUppercase, includeLowercase, includeNumbers, includeSymbols)
     passwordDisplay.innerText = password
